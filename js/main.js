@@ -10,6 +10,7 @@ function startTarfficLight() {
 
   setTimeout(() => {
     elRed.style.backgroundColor = 'red';
+    elInnerImg.classList.remove('image');
   }, 100);
 
   setTimeout(() => {
@@ -62,7 +63,9 @@ function startTarfficLight() {
 
   setTimeout(() => {
     elGreen.style.backgroundColor = 'green';
+    elInnerImg.classList.add('image');
   }, 13000);
+
 
   setTimeout(() => {
     elGreen.style.backgroundColor = 'white';
